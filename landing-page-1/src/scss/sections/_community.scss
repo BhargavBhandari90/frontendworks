@@ -1,0 +1,39 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.community {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 27px;
+    flex-direction: column;
+    gap: 11px;
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 89px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 5.57px;
+        padding: 16.71px 22.27px;
+        align-items: center;
+        box-shadow: 0 1.39px 2.78px #ABBED1;
+    }
+
+    &__logo {
+        width: 45.24px;
+        height: 38.98px;
+    }
+
+    &__title {
+        font-size: 19.49px;
+        line-height: 25.1px;
+        font-weight: bold;
+        color: base.$color-d-grey;
+    }
+}

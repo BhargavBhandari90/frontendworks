@@ -1,9 +1,8 @@
+@use './variables' as base;
 @use './mixins' as *;
 
 section,
-footer {
-
-}
+footer {}
 
 .hero,
 .feature-hero,
@@ -26,4 +25,11 @@ footer {
 .wrap {
   max-width: 50.063rem;
   width: 100%;
+}
+
+.title {
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 600;
+  color: base.$color-d-grey;
 }

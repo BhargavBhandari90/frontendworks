@@ -6,6 +6,10 @@
     flex-direction: column;
     gap: 2.063rem;
     align-items: center;
-    max-width: 50.063rem;
-    width: 100%;
+    margin-top: 26.33px;
+
+    section {
+        width: 100%;
+        max-width: 50.063rem;
+    }
 }

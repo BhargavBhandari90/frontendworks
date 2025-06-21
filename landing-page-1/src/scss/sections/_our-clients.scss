@@ -1,0 +1,33 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.our-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 27px;;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        text-align: center;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__logs {
+        display: flex;
+        justify-content: space-between;
+        padding: 17.4px 0;
+    }
+
+    &__logo{
+        width: 34px;
+        height: 34px;
+    }
+}

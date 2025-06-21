@@ -1,0 +1,12 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.unlock {
+    display: flex;
+    gap: 34.11px;
+    align-items: center;
+
+    &__icon {
+        margin: 36px 0;
+    }
+}
