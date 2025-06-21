@@ -67,3 +67,4 @@ library/vendors/composer
 assets/img/.DS_Store
 .DS_Store
 package-lock.json
+!*/assets/icons/
