@@ -1,9 +1,4 @@
-# Bhargav Bhandari #
-
-## Description ##
-
-Developer Applicant Challenge
-Ref: https://awesomemotive.com/careers/developer-applicant-challenge-part-2/
+Link: [Demo](https://bhargavbhandari90.github.io/frontendworks/landing-page-1/)
 
 ## Production ready Style and JS are under:
 
