@@ -1,0 +1,14 @@
+{
+  "name": "landing-page-1",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass src/scss/main.scss dist/css/style.css --watch",
+    "build-css": "sass src/scss/main.scss dist/css/style.min.css --style=compressed",
+    "minify-js": "terser src/js/script.js -o dist/js/script.min.js --compress --mangle",
+    "build": "npm run build-css && npm run minify-js"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0",
+    "terser": "^5.43.1"
+  }
+}

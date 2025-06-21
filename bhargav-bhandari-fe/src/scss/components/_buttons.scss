@@ -1,0 +1,53 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  font-family: base.$font-body;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  @include respond(sm) {
+    font-size: 1rem;
+  }
+
+  &.button--primary {
+    background: base.$color-primary;
+    color: base.$color-white;
+    padding: 20px 57px;
+
+    &:hover {
+      background-color: #cc692a;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    @include respond(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &.button--secondary {
+    background: base.$color-white;
+    border: 1px solid base.$color-border;
+    color: base.$color-muted;
+    padding: 20px 83px;
+
+    &:hover {
+      background-color: #f0f0f0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @include respond(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

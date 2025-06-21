@@ -1,0 +1,88 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__wrap {
+        width: 100%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-height: 58px;
+        padding: 12px 0;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 16px;
+        width: 107px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 22px
+    }
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+    }
+
+    &__link {
+        line-height: 16px;
+        font-size: 11px;
+        text-decoration: none;
+        color: base.$color-grey;
+    }
+
+    &__button--primary {
+        padding: 9.7px 22px;
+        background-color: base.$color-primary;
+        color: base.$color-white;
+        border: none;
+        border-radius: 2.78px;
+        cursor: pointer;
+        display: flex;
+        gap: 5px;
+    }
+
+    &__hero {
+        padding: 67px 100px;
+
+        &__content {
+            margin-bottom: 22px;;
+        }
+
+        &__wrap{
+            display: flex;
+            justify-content: space-around;
+            gap: 72px;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 44.55px;
+            line-height: 53px;
+            font-weight: 500;
+        }
+
+        &__highlight {
+            color: base.$color-primary;
+        }
+
+        &__text {
+            font-size: 11px;
+            line-height: 17px;
+        }
+    }
+}

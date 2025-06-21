@@ -1,0 +1,130 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.hero {
+  display: flex;
+  justify-content: center;
+
+  @include respond(md) {
+    padding: 0 2rem;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 630px;
+    width: 100%;
+    padding-top: 3.125rem;
+
+    @include respond(sm) {
+      gap: 1.5rem;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    opacity: 0.8;
+
+    @include respond(sm) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    height: 3.875rem;
+
+    @include respond(md) {
+      height: 2rem;
+    }
+  }
+
+  &__heading {
+    font-family: base.$font-heading;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: #444;
+
+    @include respond(sm) {
+      font-size: 32px;
+    }
+  }
+
+  &__badge {
+    background: url(../../assets/pro-badge.svg) no-repeat center;
+    height: 22px;
+    width: 43px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 3.125rem;
+    justify-content: center;
+
+    @include respond(md) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__background {
+    height: 41.25rem;
+    position: absolute;
+    background-color: base.$color-bg-light;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.feature-hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.125rem;
+
+  @include respond(lg) {
+    padding: 0 2rem;
+  }
+
+  &__thumbnail-wrap {
+    position: relative;
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  &__play-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__play-button {
+    width: clamp(3rem, 12vw, 7.75rem);
+    height: auto;
+
+    &:hover {
+      box-shadow: 0 4px 10px rgb(0 0 0 / 62%);
+      border-radius: 50%;
+    }
+  }
+
+  &__thumbnail {
+    max-width: 960px;
+    width: 100%;
+    max-height: 540px;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 0 10px 50px 0 #00000026;
+    display: block;
+  }
+}

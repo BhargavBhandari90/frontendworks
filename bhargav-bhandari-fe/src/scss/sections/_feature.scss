@@ -1,0 +1,76 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    max-width: 956px;
+    width: 100%;
+    gap: 3.188rem;
+    justify-content: space-between;
+
+    @include respond(lg) {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0 2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 15.625rem;
+    width: 100%;
+
+    @include respond(lg) {
+      max-width: 100%;
+    }
+  }
+
+  &__img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #444;
+
+    @include respond(sm) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__spacer {
+    margin-top: 1.75rem;
+    @include respond(lg) {
+      margin-top: 0;
+    }
+  }
+
+  &__row-devider {
+    max-width: 960px;
+    width: 100%;
+    height: 1px;
+    background-color: base.$color-border;
+
+    @include respond(lg) {
+      background: none;
+    }
+  }
+}

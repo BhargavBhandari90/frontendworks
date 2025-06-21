@@ -1,0 +1,28 @@
+@use './mixins' as *;
+
+section,
+footer {
+  margin-top: 6.25rem;
+
+  @include respond(md) {
+    margin-top: 3rem;
+  }
+}
+
+.hero,
+.feature-hero,
+.feature,
+.testimonial,
+.info-split,
+.screenshot,
+.footer {
+  text-align: center;
+}
+
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

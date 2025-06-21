@@ -1,0 +1,27 @@
+@use '../base/mixins' as *;
+
+.screenshot {
+  display: flex;
+  justify-content: center;
+
+  &__wrap {
+    max-width: 60rem;
+    display: flex;
+    gap: 3.125rem;
+
+    @include respond(lg) {
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+  }
+
+  &__img {
+    width: 28.438rem;
+    border-radius: 6px;
+    box-shadow: 0 5px 25px 0 #00000026;
+
+    @include respond(lg) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6.25rem;
+
+  @include respond(lg) {
+    padding: 0 2rem;
+  }
+
+  &__wrap {
+    max-width: 60rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6.25rem;
+
+    @include respond(md) {
+      margin-top: 3rem;
+      gap: 3rem;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: base.$color-text-primary;
+
+    @include respond(sm) {
+      font-size: 20px;
+    }
+  }
+
+  &__usecase {
+    display: flex;
+    gap: 3.188rem;
+
+    @include respond(lg) {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @include respond(sm) {
+      gap: 1rem;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: center;
+      max-width: 15.708rem;
+
+      @include respond(lg) {
+        max-width: none;
+      }
+    }
+
+    &__icon {
+      height: 48px;
+      width: 48px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      color: base.$color-text-primary;
+      text-align: center;
+
+      @include respond(sm) {
+        font-size: 20px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    .lead-geneation-icon {
+      background: url(../../assets/icons/envelope.svg) center no-repeat;
+    }
+
+    .surveys-icon {
+      background: url(../../assets/icons/poll.svg) center no-repeat;
+    }
+
+    .membership-sites-icon {
+      background: url(../../assets/icons/id-badge.svg) center no-repeat;
+    }
+  }
+
+  &__bottom-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      color: base.$color-text-primary;
+
+      @include respond(sm) {
+        font-size: 20px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 1.4;
+
+      @include respond(sm) {
+        font-size: 16px;
+      }
+    }
+
+    a {
+      color: base.$link-color;
+      font-family: base.$font-body;
+      font-weight: 400;
+      font-size: 18px;
+      text-decoration: underline;
+
+      @include respond(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+}

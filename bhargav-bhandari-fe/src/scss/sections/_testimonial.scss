@@ -1,0 +1,91 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.testimonial {
+  padding-top: 6.25rem;
+  background: linear-gradient(180deg, base.$color-bg-light 0%, base.$color-white 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+  align-items: center;
+
+  @include respond(lg) {
+    padding: 0 2rem;
+  }
+
+  @include respond(lg) {
+    gap: 3rem;
+  }
+
+  &__row {
+    display: flex;
+    gap: 3.125rem;
+    justify-content: center;
+    max-width: 60rem;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    @include respond(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background: base.$color-white;
+    padding: 1.875rem;
+    border: 1px solid base.$color-border;
+    border-radius: 6px;
+    max-width: 286.67px;
+    width: 100%;
+    gap: 0.938rem;
+    flex: 1;
+
+    @include respond(lg) {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: base.$color-muted;
+  }
+
+  &__credit {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__author {
+    font-size: 14px;
+  }
+
+  &__star-rating {
+    display: flex;
+    align-items: center;
+  }
+
+  &__star {
+    background: url(../../assets/icons/star-solid.svg);
+    display: block;
+    height: 16px;
+    width: 16px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 3.125rem;
+    justify-content: center;
+
+    @include respond(md) {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@use '../base/variables' as base;
+
+.divider {
+  width: 1px;
+  background-color: base.$color-border;
+}

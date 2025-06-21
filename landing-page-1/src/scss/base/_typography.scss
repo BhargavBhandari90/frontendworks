@@ -1,0 +1,13 @@
+@use '../base/variables' as base;
+
+body {
+  font-family: base.$font-body;
+  line-height: 1.6;
+  color: base.$color-grey;
+}
+
+h2,
+h3,
+p {
+  font-family: base.$font-body;
+}

@@ -1,0 +1,11 @@
+@use '../base/variables' as base;
+@use '../base/mixins' as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.063rem;
+    align-items: center;
+    max-width: 50.063rem;
+    width: 100%;
+}
