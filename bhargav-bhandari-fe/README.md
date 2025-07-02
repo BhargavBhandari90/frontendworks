@@ -1,4 +1,5 @@
 Link: [Demo](https://bhargavbhandari90.github.io/frontendworks/bhargav-bhandari-fe/)
+Figma Design: [Figma](https://www.figma.com/design/xMcM9KKzzdQY6wyA3VIdBh/WPForms---Developer-Build-Test?node-id=0-1&p=f&t=vlPLrRgAVt9rRHdm-0)
 
 ## Production ready Style and JS are under:
 
